@@ -19,6 +19,8 @@
 		58CD9EE52B7D0BFD008F834C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		58CD9EE72B7D0BFE008F834C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		58CD9EEA2B7D0BFE008F834C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		58CD9EF12B7D0E80008F834C /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		58CD9EF32B7D0ECA008F834C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +37,8 @@
 		58CD9ED72B7D0BFD008F834C = {
 			isa = PBXGroup;
 			children = (
+				58CD9EF32B7D0ECA008F834C /* README.md */,
+				58CD9EF12B7D0E80008F834C /* .gitignore */,
 				58CD9EE22B7D0BFD008F834C /* mountain */,
 				58CD9EE12B7D0BFD008F834C /* Products */,
 			);

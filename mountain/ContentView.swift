@@ -2,20 +2,19 @@
 //  ContentView.swift
 //  mountain
 //
-//  Created by moveguard on 14.02.24.
+//  Created by Thore Jahn on 14.02.24.
 //
 
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        TabView {
+            RunningOrder()
+                .tabItem {
+                    Label("Runnung Order", systemImage: "music.mic") }
+            
         }
-        .padding()
     }
 }
 

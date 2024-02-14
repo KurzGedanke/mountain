@@ -2,7 +2,7 @@
 //  mountainApp.swift
 //  mountain
 //
-//  Created by moveguard on 14.02.24.
+//  Created by Thore Jahn on 14.02.24.
 //
 
 import SwiftUI

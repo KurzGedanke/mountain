@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct RunningOrder: View {
+struct RunningOrderView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("Running Order!")
     }
 }
 
 #Preview {
-    RunningOrder()
+    RunningOrderView()
 }

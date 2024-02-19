@@ -10,10 +10,12 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView {
-            RunningOrder()
+            BillingView()
+                .tabItem {
+                    Label("Bands", systemImage: "music.note.list") }
+            RunningOrderView()
                 .tabItem {
                     Label("Runnung Order", systemImage: "music.mic") }
-            
         }
     }
 }

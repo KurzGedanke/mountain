@@ -11,7 +11,7 @@ struct BandView: View {
     var band: Band
     var body: some View {
             ScrollView {
-                Text(band.discriptiopn)
+                Text(band.description)
                     .padding()
                 HStack {
                     Link(destination: URL(string: band.bandcamp)!, label: {

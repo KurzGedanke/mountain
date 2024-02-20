@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D8A74E42B85385900B12F5F /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8A74E32B85385900B12F5F /* TimerView.swift */; };
 		4DCA95C32B83FF7000C363E0 /* BillingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCA95C22B83FF7000C363E0 /* BillingView.swift */; };
 		4DCA95C52B8400E000C363E0 /* Band.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCA95C42B8400E000C363E0 /* Band.swift */; };
 		4DCA95C72B84059A00C363E0 /* BandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCA95C62B84059A00C363E0 /* BandView.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4D8A74E32B85385900B12F5F /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		4DCA95C22B83FF7000C363E0 /* BillingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillingView.swift; sourceTree = "<group>"; };
 		4DCA95C42B8400E000C363E0 /* Band.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Band.swift; sourceTree = "<group>"; };
 		4DCA95C62B84059A00C363E0 /* BandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BandView.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 				58CD9EF42B7D0FE5008F834C /* RunningOrderView.swift */,
 				4DCA95C42B8400E000C363E0 /* Band.swift */,
 				4DCA95C62B84059A00C363E0 /* BandView.swift */,
+				4D8A74E32B85385900B12F5F /* TimerView.swift */,
 			);
 			path = mountain;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D8A74E42B85385900B12F5F /* TimerView.swift in Sources */,
 				58CD9EE62B7D0BFD008F834C /* ContentView.swift in Sources */,
 				4DCA95C32B83FF7000C363E0 /* BillingView.swift in Sources */,
 				58CD9EE42B7D0BFD008F834C /* mountainApp.swift in Sources */,

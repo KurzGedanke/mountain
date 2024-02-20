@@ -11,10 +11,12 @@ struct BillingView: View {
     var body: some View {
         NavigationView {
             List {
-                Text("Behemoth")
-                Text("Blind Gurdian")
-                Text("Deserted Fear")
-            }        
+                ForEach(bands, id: \.name) {band in
+                    NavigationLink(destination: BandView(band: band)) {
+                        Text(band.name)
+                    }
+                }
+            }
             .navigationTitle("Bands")
         }
     }

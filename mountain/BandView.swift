@@ -8,21 +8,34 @@
 import SwiftUI
 
 struct BandView: View {
+    var band: Band
     var body: some View {
-        NavigationView {
-            VStack {
-                Text("Behemoth ist eine ganz tolle band!")
-                Text("Donnerstag")
-                Text("12:30")
+            ScrollView {
+                Text(band.discriptiopn)
+                    .padding()
+                HStack {
+                    Link(destination: URL(string: band.bandcamp)!, label: {
+                        Image("Streaming/bandcamp_logo")
+                            .resizable()
+                            .scaledToFit()
+                    })
+                    Link(destination: URL(string: band.appleMusic)!, label: {
+                        Image("Streaming/apple_music")
+                            .resizable()
+                            .scaledToFit()
+                    })
+                    Link(destination: URL(string: band.spotify)!, label: {
+                        Image("Streaming/spotify_logo")
+                            .resizable()
+                            .scaledToFit()
+                    })
+                }
+                .padding()
             }
-            .navigationTitle("Behemoth")
-            .toolbar {
-                Button("Zurück", systemImage: "arrow.backward", action: {})
-            }
-        }
+            .navigationTitle(band.name)
     }
 }
 
 #Preview {
-    BandView()
+    BandView(band: bands[2])
 }

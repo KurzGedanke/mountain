@@ -13,6 +13,9 @@ struct ContentView: View {
             BillingView()
                 .tabItem {
                     Label("Bands", systemImage: "music.note.list") }
+            DongMapView()
+                .tabItem {
+                    Label("Karte", systemImage: "map") }
             RunningOrderView()
                 .tabItem {
                     Label("Runnung Order", systemImage: "music.mic") }

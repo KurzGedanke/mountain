@@ -20,6 +20,7 @@ struct DongMapView: View {
     var body: some View {
         Map(coordinateRegion: $region)
         .mapStyle(.imagery)
+        .ignoresSafeArea(.container)
     }
 }
 

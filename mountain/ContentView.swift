@@ -10,15 +10,15 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView {
+            WelcomeView()
+                .tabItem {
+                    Label("Home", systemImage: "house") }
             BillingView()
                 .tabItem {
                     Label("Bands", systemImage: "music.note.list") }
-            DongMapView()
-                .tabItem {
-                    Label("Karte", systemImage: "map") }
-            RunningOrderView()
-                .tabItem {
-                    Label("Runnung Order", systemImage: "music.mic") }
+//            DongMapView()
+//                .tabItem {
+//                    Label("Karte", systemImage: "map") }
         }
     }
 }

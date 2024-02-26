@@ -10,10 +10,10 @@ import SwiftUI
 struct BillingView: View {
     var body: some View {
         NavigationView {
-            List {
-                ForEach(bands, id: \.name) {band in
-                    NavigationLink(destination: BandView(band: band)) {
-                        Text(band.name)
+                List {
+                    ForEach(bands, id: \.name) {band in
+                        NavigationLink(destination: BandView(band: band)) {
+                            Text(band.name)
                     }
                 }
             }

@@ -46,20 +46,25 @@ struct BandDetailView: View {
     @ViewBuilder
     private func header(_ band: Band) -> some View {
         if let url = band.imageURL {
-            AsyncImage(url: url) { phase in
-                switch phase {
-                case .success(let image):
-                    image.resizable().scaledToFill()
-                case .failure:
-                    placeholderArt
-                default:
-                    ZStack { placeholderArt; ProgressView() }
+            // Size is fixed by the clear container; the fill image lives in an
+            // overlay so it can't push the layout wider than the screen.
+            Color.clear
+                .frame(maxWidth: .infinity)
+                .frame(height: 220)
+                .overlay {
+                    AsyncImage(url: url) { phase in
+                        switch phase {
+                        case .success(let image):
+                            image.resizable().scaledToFill()
+                        case .failure:
+                            placeholderArt
+                        default:
+                            ZStack { placeholderArt; ProgressView() }
+                        }
+                    }
                 }
-            }
-            .frame(maxWidth: .infinity)
-            .frame(height: 220)
-            .clipped()
-            .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
+                .clipped()
+                .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
         }
 
         if let genre = band.genre, !genre.isEmpty {

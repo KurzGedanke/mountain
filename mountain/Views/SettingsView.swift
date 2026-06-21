@@ -34,6 +34,7 @@ enum AppearanceSetting: String, CaseIterable, Identifiable {
 
 struct SettingsView: View {
     @AppStorage("appearance") private var appearance: AppearanceSetting = .system
+    @AppStorage("remindersEnabled") private var remindersEnabled = true
 
     var body: some View {
         NavigationStack {
@@ -45,6 +46,14 @@ struct SettingsView: View {
                         }
                     }
                     .pickerStyle(.segmented)
+                }
+
+                Section {
+                    Toggle("Reminders", isOn: $remindersEnabled)
+                } header: {
+                    Text("Notifications")
+                } footer: {
+                    Text("Get a reminder 15 minutes before a favorited band plays.")
                 }
 
                 Section {

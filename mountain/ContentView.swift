@@ -9,12 +9,20 @@ import SwiftUI
 
 enum AppTab: Hashable { case now, lineup, settings }
 
+/// Drives the reminder-sync `.task`: re-runs when favorites or the
+/// notifications toggle change.
+private struct ReminderSyncKey: Hashable {
+    let enabled: Bool
+    let favorites: Set<Int>
+}
+
 struct ContentView: View {
     @Environment(LineupStore.self) private var lineup
     @Environment(FavoritesStore.self) private var favorites
     @Environment(ReminderManager.self) private var reminders
 
     @AppStorage("appearance") private var appearance: AppearanceSetting = .system
+    @AppStorage("remindersEnabled") private var remindersEnabled = true
 
     @State private var selection: AppTab = {
         let args = ProcessInfo.processInfo.arguments
@@ -39,13 +47,13 @@ struct ContentView: View {
             }
         }
         .preferredColorScheme(appearance.colorScheme)
-        // Re-schedule reminders whenever favorites change; ask permission the
-        // first time the user actually favorites something.
-        .task(id: favorites.ids) {
-            if !favorites.ids.isEmpty && !reminders.authorized {
+        // Re-schedule reminders whenever favorites or the notifications toggle
+        // change; ask permission the first time the user enables a reminder.
+        .task(id: ReminderSyncKey(enabled: remindersEnabled, favorites: favorites.ids)) {
+            if remindersEnabled && !favorites.ids.isEmpty && !reminders.authorized {
                 await reminders.requestAuthorization()
             }
-            await reminders.sync(favorites: favorites.ids, slots: lineup.slots)
+            await reminders.sync(enabled: remindersEnabled, favorites: favorites.ids, slots: lineup.slots)
         }
     }
 }

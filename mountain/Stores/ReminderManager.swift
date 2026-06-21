@@ -25,14 +25,17 @@ final class ReminderManager {
         authorized = granted
     }
 
-    /// Rebuilds all pending reminders from scratch.
-    func sync(favorites: Set<Int>, slots: [TimeSlot]) async {
+    /// Rebuilds all pending reminders from scratch. When `enabled` is false (the
+    /// user turned reminders off in Settings) all pending reminders are cleared
+    /// and nothing is scheduled.
+    func sync(enabled: Bool, favorites: Set<Int>, slots: [TimeSlot]) async {
         let center = UNUserNotificationCenter.current()
+        center.removeAllPendingNotificationRequests()
+        guard enabled else { return }
+
         let settings = await center.notificationSettings()
         let allowed = settings.authorizationStatus == .authorized
             || settings.authorizationStatus == .provisional
-
-        center.removeAllPendingNotificationRequests()
         guard allowed else { return }
 
         let now = Date()

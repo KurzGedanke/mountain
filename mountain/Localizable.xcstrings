@@ -81,6 +81,27 @@
         "en" : { "stringUnit" : { "state" : "translated", "value" : "Favorites only" } }
       }
     },
+    "Get a reminder 15 minutes before a favorited band plays." : {
+      "comment" : "Settings footer explaining the reminders toggle",
+      "localizations" : {
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Erhalte 15 Minuten vorher eine Erinnerung, bevor eine favorisierte Band spielt." } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Get a reminder 15 minutes before a favorited band plays." } }
+      }
+    },
+    "Notifications" : {
+      "comment" : "Settings section header for the reminders toggle",
+      "localizations" : {
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Benachrichtigungen" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Notifications" } }
+      }
+    },
+    "Reminders" : {
+      "comment" : "Toggle label: enable/disable reminder notifications",
+      "localizations" : {
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Erinnerungen" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Reminders" } }
+      }
+    },
     "Find me online" : {
       "localizations" : {
         "de" : { "stringUnit" : { "state" : "translated", "value" : "Online findest du mich" } },

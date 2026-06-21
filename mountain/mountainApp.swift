@@ -13,6 +13,8 @@ struct mountainApp: App {
     @State private var favorites = FavoritesStore()
     @State private var reminders = ReminderManager()
 
+    @AppStorage("remindersEnabled") private var remindersEnabled = true
+
     var body: some Scene {
         WindowGroup {
             ContentView()
@@ -21,7 +23,7 @@ struct mountainApp: App {
                 .environment(reminders)
                 .task {
                     await lineup.refresh()
-                    await reminders.sync(favorites: favorites.ids, slots: lineup.slots)
+                    await reminders.sync(enabled: remindersEnabled, favorites: favorites.ids, slots: lineup.slots)
                 }
         }
     }

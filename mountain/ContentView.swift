@@ -7,22 +7,49 @@
 
 import SwiftUI
 
+enum AppTab: Hashable { case now, lineup, about }
+
 struct ContentView: View {
+    @Environment(LineupStore.self) private var lineup
+    @Environment(FavoritesStore.self) private var favorites
+    @Environment(ReminderManager.self) private var reminders
+
+    @State private var selection: AppTab = {
+        let args = ProcessInfo.processInfo.arguments
+        guard let i = args.firstIndex(of: "-startTab"), i + 1 < args.count else { return .now }
+        switch args[i + 1] {
+        case "lineup": return .lineup
+        case "about": return .about
+        default: return .now
+        }
+    }()
+
     var body: some View {
-        TabView {
-            WelcomeView()
-                .tabItem {
-                    Label("Home", systemImage: "house") }
-            BillingView()
-                .tabItem {
-                    Label("Bands", systemImage: "music.note.list") }
-//            DongMapView()
-//                .tabItem {
-//                    Label("Karte", systemImage: "map") }
+        TabView(selection: $selection) {
+            Tab("Now", systemImage: "play.circle.fill", value: AppTab.now) {
+                HomeView()
+            }
+            Tab("Line-up", systemImage: "list.bullet", value: AppTab.lineup) {
+                RunningOrderView()
+            }
+            Tab("About", systemImage: "person.crop.circle", value: AppTab.about) {
+                AboutView()
+            }
+        }
+        // Re-schedule reminders whenever favorites change; ask permission the
+        // first time the user actually favorites something.
+        .task(id: favorites.ids) {
+            if !favorites.ids.isEmpty && !reminders.authorized {
+                await reminders.requestAuthorization()
+            }
+            await reminders.sync(favorites: favorites.ids, slots: lineup.slots)
         }
     }
 }
 
 #Preview {
     ContentView()
+        .environment(LineupStore())
+        .environment(FavoritesStore())
+        .environment(ReminderManager())
 }

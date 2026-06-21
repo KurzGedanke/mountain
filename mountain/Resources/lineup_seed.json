@@ -1,0 +1,598 @@
+{
+  "festival": "Dong Open Air 2026",
+  "stages": [
+    "Hauptbühne"
+  ],
+  "bands": [
+    {
+      "id": 1,
+      "name": "Aereum",
+      "slug": "aereum",
+      "genre": null,
+      "logo": null,
+      "image": "https://bands.baphomet.club/images/band/images/aereum.jpg",
+      "instagram": null,
+      "spotify": null,
+      "appleMusic": null,
+      "bandcamp": null,
+      "description": null
+    },
+    {
+      "id": 2,
+      "name": "Onyxsin",
+      "slug": "onyxsin",
+      "genre": null,
+      "logo": null,
+      "image": "https://bands.baphomet.club/images/band/images/onyxsin.jpg",
+      "instagram": null,
+      "spotify": null,
+      "appleMusic": null,
+      "bandcamp": null,
+      "description": null
+    },
+    {
+      "id": 3,
+      "name": "Opus Maxima",
+      "slug": "opus-maxima",
+      "genre": null,
+      "logo": null,
+      "image": "https://bands.baphomet.club/images/band/images/opus_maxima.jpg",
+      "instagram": null,
+      "spotify": null,
+      "appleMusic": null,
+      "bandcamp": null,
+      "description": null
+    },
+    {
+      "id": 4,
+      "name": "Homecoming",
+      "slug": "homecoming",
+      "genre": null,
+      "logo": null,
+      "image": "https://bands.baphomet.club/images/band/images/homecoming.jpg",
+      "instagram": null,
+      "spotify": null,
+      "appleMusic": null,
+      "bandcamp": null,
+      "description": null
+    },
+    {
+      "id": 5,
+      "name": "Octoploid",
+      "slug": "octoploid",
+      "genre": null,
+      "logo": null,
+      "image": "https://bands.baphomet.club/images/band/images/octoploid.jpg",
+      "instagram": null,
+      "spotify": null,
+      "appleMusic": null,
+      "bandcamp": null,
+      "description": null
+    },
+    {
+      "id": 6,
+      "name": "Non Est Deus",
+      "slug": "non-est-deus",
+      "genre": null,
+      "logo": null,
+      "image": "https://bands.baphomet.club/images/band/images/non_est_deux.jpg",
+      "instagram": null,
+      "spotify": null,
+      "appleMusic": null,
+      "bandcamp": null,
+      "description": null
+    },
+    {
+      "id": 7,
+      "name": "Subway to Sally",
+      "slug": "subway-to-sally",
+      "genre": null,
+      "logo": null,
+      "image": "https://bands.baphomet.club/images/band/images/subway_to_sally.jpg",
+      "instagram": null,
+      "spotify": null,
+      "appleMusic": null,
+      "bandcamp": null,
+      "description": null
+    },
+    {
+      "id": 8,
+      "name": "Amorphis",
+      "slug": "amorphis",
+      "genre": null,
+      "logo": null,
+      "image": "https://bands.baphomet.club/images/band/images/amorphis.jpg",
+      "instagram": null,
+      "spotify": null,
+      "appleMusic": null,
+      "bandcamp": null,
+      "description": null
+    },
+    {
+      "id": 9,
+      "name": "Hold Your Ground",
+      "slug": "hold-your-ground",
+      "genre": null,
+      "logo": null,
+      "image": "https://bands.baphomet.club/images/band/images/hold_your_ground.jpg",
+      "instagram": null,
+      "spotify": null,
+      "appleMusic": null,
+      "bandcamp": null,
+      "description": null
+    },
+    {
+      "id": 10,
+      "name": "VORGA",
+      "slug": "vorga",
+      "genre": null,
+      "logo": null,
+      "image": "https://bands.baphomet.club/images/band/images/vorga.jpg",
+      "instagram": null,
+      "spotify": null,
+      "appleMusic": null,
+      "bandcamp": null,
+      "description": null
+    },
+    {
+      "id": 11,
+      "name": "Vansind",
+      "slug": "vansind",
+      "genre": null,
+      "logo": null,
+      "image": "https://bands.baphomet.club/images/band/images/vansind.jpg",
+      "instagram": null,
+      "spotify": null,
+      "appleMusic": null,
+      "bandcamp": null,
+      "description": null
+    },
+    {
+      "id": 12,
+      "name": "SubMasq",
+      "slug": "submasq",
+      "genre": null,
+      "logo": null,
+      "image": "https://bands.baphomet.club/images/band/images/subterranean_masquerade.jpg",
+      "instagram": null,
+      "spotify": null,
+      "appleMusic": null,
+      "bandcamp": null,
+      "description": null
+    },
+    {
+      "id": 13,
+      "name": "Night in Gales",
+      "slug": "night-in-gales",
+      "genre": null,
+      "logo": null,
+      "image": "https://bands.baphomet.club/images/band/images/night_in_gales.jpg",
+      "instagram": null,
+      "spotify": null,
+      "appleMusic": null,
+      "bandcamp": null,
+      "description": null
+    },
+    {
+      "id": 14,
+      "name": "Goldsmith",
+      "slug": "goldsmith",
+      "genre": null,
+      "logo": null,
+      "image": "https://bands.baphomet.club/images/band/images/goldsmith.jpg",
+      "instagram": null,
+      "spotify": null,
+      "appleMusic": null,
+      "bandcamp": null,
+      "description": null
+    },
+    {
+      "id": 15,
+      "name": "Grailknights",
+      "slug": "grailknights",
+      "genre": null,
+      "logo": null,
+      "image": "https://bands.baphomet.club/images/band/images/grailknights.jpg",
+      "instagram": null,
+      "spotify": null,
+      "appleMusic": null,
+      "bandcamp": null,
+      "description": null
+    },
+    {
+      "id": 16,
+      "name": "Creeper",
+      "slug": "creeper",
+      "genre": null,
+      "logo": null,
+      "image": "https://bands.baphomet.club/images/band/images/creeper.jpg",
+      "instagram": null,
+      "spotify": null,
+      "appleMusic": null,
+      "bandcamp": null,
+      "description": null
+    },
+    {
+      "id": 17,
+      "name": "Satyricon",
+      "slug": "satyricon",
+      "genre": null,
+      "logo": null,
+      "image": "https://bands.baphomet.club/images/band/images/satyricon.jpg",
+      "instagram": null,
+      "spotify": null,
+      "appleMusic": null,
+      "bandcamp": null,
+      "description": null
+    },
+    {
+      "id": 18,
+      "name": "Skindred",
+      "slug": "skindred",
+      "genre": null,
+      "logo": null,
+      "image": "https://bands.baphomet.club/images/band/images/skindred.jpg",
+      "instagram": null,
+      "spotify": null,
+      "appleMusic": null,
+      "bandcamp": null,
+      "description": null
+    },
+    {
+      "id": 19,
+      "name": "Goatfather",
+      "slug": "goatfather",
+      "genre": null,
+      "logo": null,
+      "image": "https://bands.baphomet.club/images/band/images/goatfather.jpg",
+      "instagram": null,
+      "spotify": null,
+      "appleMusic": null,
+      "bandcamp": null,
+      "description": null
+    },
+    {
+      "id": 20,
+      "name": "Snakebite",
+      "slug": "snakebite",
+      "genre": null,
+      "logo": null,
+      "image": "https://bands.baphomet.club/images/band/images/snakebite.jpg",
+      "instagram": null,
+      "spotify": null,
+      "appleMusic": null,
+      "bandcamp": null,
+      "description": null
+    },
+    {
+      "id": 21,
+      "name": "Gangrena Gasosa",
+      "slug": "gangrena-gasosa",
+      "genre": null,
+      "logo": null,
+      "image": "https://bands.baphomet.club/images/band/images/gangrena_gasosa.jpg",
+      "instagram": null,
+      "spotify": null,
+      "appleMusic": null,
+      "bandcamp": null,
+      "description": null
+    },
+    {
+      "id": 22,
+      "name": "Synsnake",
+      "slug": "synsnake",
+      "genre": null,
+      "logo": null,
+      "image": "https://bands.baphomet.club/images/band/images/sysnake.jpg",
+      "instagram": null,
+      "spotify": null,
+      "appleMusic": null,
+      "bandcamp": null,
+      "description": null
+    },
+    {
+      "id": 23,
+      "name": "Impureza",
+      "slug": "impureza",
+      "genre": null,
+      "logo": null,
+      "image": "https://bands.baphomet.club/images/band/images/impureza.jpg",
+      "instagram": null,
+      "spotify": null,
+      "appleMusic": null,
+      "bandcamp": null,
+      "description": null
+    },
+    {
+      "id": 24,
+      "name": "Detartrated",
+      "slug": "detartrated",
+      "genre": null,
+      "logo": null,
+      "image": "https://bands.baphomet.club/images/band/images/detartrated.jpg",
+      "instagram": null,
+      "spotify": null,
+      "appleMusic": null,
+      "bandcamp": null,
+      "description": null
+    },
+    {
+      "id": 25,
+      "name": "Bonded",
+      "slug": "bonded",
+      "genre": null,
+      "logo": null,
+      "image": "https://bands.baphomet.club/images/band/images/bonded.jpg",
+      "instagram": null,
+      "spotify": null,
+      "appleMusic": null,
+      "bandcamp": null,
+      "description": null
+    },
+    {
+      "id": 26,
+      "name": "Gaerea",
+      "slug": "gaerea",
+      "genre": null,
+      "logo": null,
+      "image": "https://bands.baphomet.club/images/band/images/gaerea.jpg",
+      "instagram": null,
+      "spotify": null,
+      "appleMusic": null,
+      "bandcamp": null,
+      "description": null
+    },
+    {
+      "id": 27,
+      "name": "Overkill",
+      "slug": "overkill",
+      "genre": null,
+      "logo": null,
+      "image": "https://bands.baphomet.club/images/band/images/overkill.jpg",
+      "instagram": null,
+      "spotify": null,
+      "appleMusic": null,
+      "bandcamp": null,
+      "description": null
+    },
+    {
+      "id": 28,
+      "name": "Alestorm",
+      "slug": "alestorm",
+      "genre": null,
+      "logo": null,
+      "image": "https://bands.baphomet.club/images/band/images/alestorm.jpg",
+      "instagram": null,
+      "spotify": null,
+      "appleMusic": null,
+      "bandcamp": null,
+      "description": null
+    }
+  ],
+  "slots": [
+    {
+      "bandId": 1,
+      "band": "Aereum",
+      "bandSlug": "aereum",
+      "stage": "Hauptbühne",
+      "start": 1784197500,
+      "end": 1784201400
+    },
+    {
+      "bandId": 2,
+      "band": "Onyxsin",
+      "bandSlug": "onyxsin",
+      "stage": "Hauptbühne",
+      "start": 1784201400,
+      "end": 1784205300
+    },
+    {
+      "bandId": 3,
+      "band": "Opus Maxima",
+      "bandSlug": "opus-maxima",
+      "stage": "Hauptbühne",
+      "start": 1784205300,
+      "end": 1784209200
+    },
+    {
+      "bandId": 4,
+      "band": "Homecoming",
+      "bandSlug": "homecoming",
+      "stage": "Hauptbühne",
+      "start": 1784209200,
+      "end": 1784213100
+    },
+    {
+      "bandId": 5,
+      "band": "Octoploid",
+      "bandSlug": "octoploid",
+      "stage": "Hauptbühne",
+      "start": 1784213100,
+      "end": 1784217000
+    },
+    {
+      "bandId": 6,
+      "band": "Non Est Deus",
+      "bandSlug": "non-est-deus",
+      "stage": "Hauptbühne",
+      "start": 1784217000,
+      "end": 1784222400
+    },
+    {
+      "bandId": 7,
+      "band": "Subway to Sally",
+      "bandSlug": "subway-to-sally",
+      "stage": "Hauptbühne",
+      "start": 1784222400,
+      "end": 1784228400
+    },
+    {
+      "bandId": 8,
+      "band": "Amorphis",
+      "bandSlug": "amorphis",
+      "stage": "Hauptbühne",
+      "start": 1784228400,
+      "end": 1784232900
+    },
+    {
+      "bandId": 9,
+      "band": "Hold Your Ground",
+      "bandSlug": "hold-your-ground",
+      "stage": "Hauptbühne",
+      "start": 1784279700,
+      "end": 1784283600
+    },
+    {
+      "bandId": 10,
+      "band": "VORGA",
+      "bandSlug": "vorga",
+      "stage": "Hauptbühne",
+      "start": 1784283600,
+      "end": 1784287500
+    },
+    {
+      "bandId": 11,
+      "band": "Vansind",
+      "bandSlug": "vansind",
+      "stage": "Hauptbühne",
+      "start": 1784287500,
+      "end": 1784291400
+    },
+    {
+      "bandId": 12,
+      "band": "SubMasq",
+      "bandSlug": "submasq",
+      "stage": "Hauptbühne",
+      "start": 1784291400,
+      "end": 1784295300
+    },
+    {
+      "bandId": 13,
+      "band": "Night in Gales",
+      "bandSlug": "night-in-gales",
+      "stage": "Hauptbühne",
+      "start": 1784295300,
+      "end": 1784299200
+    },
+    {
+      "bandId": 14,
+      "band": "Goldsmith",
+      "bandSlug": "goldsmith",
+      "stage": "Hauptbühne",
+      "start": 1784299200,
+      "end": 1784303100
+    },
+    {
+      "bandId": 15,
+      "band": "Grailknights",
+      "bandSlug": "grailknights",
+      "stage": "Hauptbühne",
+      "start": 1784303100,
+      "end": 1784307900
+    },
+    {
+      "bandId": 16,
+      "band": "Creeper",
+      "bandSlug": "creeper",
+      "stage": "Hauptbühne",
+      "start": 1784307900,
+      "end": 1784313300
+    },
+    {
+      "bandId": 17,
+      "band": "Satyricon",
+      "bandSlug": "satyricon",
+      "stage": "Hauptbühne",
+      "start": 1784313300,
+      "end": 1784319300
+    },
+    {
+      "bandId": 18,
+      "band": "Skindred",
+      "bandSlug": "skindred",
+      "stage": "Hauptbühne",
+      "start": 1784319300,
+      "end": 1784323800
+    },
+    {
+      "bandId": 19,
+      "band": "Goatfather",
+      "bandSlug": "goatfather",
+      "stage": "Hauptbühne",
+      "start": 1784366100,
+      "end": 1784370000
+    },
+    {
+      "bandId": 20,
+      "band": "Snakebite",
+      "bandSlug": "snakebite",
+      "stage": "Hauptbühne",
+      "start": 1784370000,
+      "end": 1784373900
+    },
+    {
+      "bandId": 21,
+      "band": "Gangrena Gasosa",
+      "bandSlug": "gangrena-gasosa",
+      "stage": "Hauptbühne",
+      "start": 1784373900,
+      "end": 1784377800
+    },
+    {
+      "bandId": 22,
+      "band": "Synsnake",
+      "bandSlug": "synsnake",
+      "stage": "Hauptbühne",
+      "start": 1784377800,
+      "end": 1784381700
+    },
+    {
+      "bandId": 23,
+      "band": "Impureza",
+      "bandSlug": "impureza",
+      "stage": "Hauptbühne",
+      "start": 1784381700,
+      "end": 1784385600
+    },
+    {
+      "bandId": 24,
+      "band": "Detartrated",
+      "bandSlug": "detartrated",
+      "stage": "Hauptbühne",
+      "start": 1784385600,
+      "end": 1784389500
+    },
+    {
+      "bandId": 25,
+      "band": "Bonded",
+      "bandSlug": "bonded",
+      "stage": "Hauptbühne",
+      "start": 1784389500,
+      "end": 1784394300
+    },
+    {
+      "bandId": 26,
+      "band": "Gaerea",
+      "bandSlug": "gaerea",
+      "stage": "Hauptbühne",
+      "start": 1784394300,
+      "end": 1784399700
+    },
+    {
+      "bandId": 27,
+      "band": "Overkill",
+      "bandSlug": "overkill",
+      "stage": "Hauptbühne",
+      "start": 1784399700,
+      "end": 1784405700
+    },
+    {
+      "bandId": 28,
+      "band": "Alestorm",
+      "bandSlug": "alestorm",
+      "stage": "Hauptbühne",
+      "start": 1784405700,
+      "end": 1784410200
+    }
+  ]
+}

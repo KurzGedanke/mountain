@@ -1,0 +1,177 @@
+{
+  "sourceLanguage" : "de",
+  "strings" : {
+    "About" : {
+      "comment" : "Title of the about-me tab",
+      "localizations" : {
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Über mich" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "About" } }
+      }
+    },
+    "Add favorite" : {
+      "comment" : "Accessibility label for the favorite star button",
+      "localizations" : {
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Favorit hinzufügen" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Add favorite" } }
+      }
+    },
+    "Band" : {
+      "comment" : "Fallback navigation title on the band detail screen",
+      "localizations" : {
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Band" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Band" } }
+      }
+    },
+    "Band not found" : {
+      "localizations" : {
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Band nicht gefunden" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Band not found" } }
+      }
+    },
+    "Both apps and the API that serves the data are open source." : {
+      "localizations" : {
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Beide Apps und die API, die die Daten liefert, sind Open Source." } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Both apps and the API that serves the data are open source." } }
+      }
+    },
+    "Connect to the internet once to download the schedule." : {
+      "localizations" : {
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Verbinde dich einmal mit dem Internet, um das Programm zu laden." } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Connect to the internet once to download the schedule." } }
+      }
+    },
+    "Favorites only" : {
+      "localizations" : {
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Nur Favoriten" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Favorites only" } }
+      }
+    },
+    "Find me online" : {
+      "localizations" : {
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Online findest du mich" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Find me online" } }
+      }
+    },
+    "Hey, I'm Thore! A podcaster and software developer from the Ruhr area. I've loved Dong Open Air for many years, and this app is basically my little love letter to the festival." : {
+      "localizations" : {
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Moin, ich bin Thore! Podcaster und Softwareentwickler aus dem Ruhrgebiet. Das Dong Open Air liebe ich schon seit vielen Jahren, und diese App ist quasi mein kleiner Liebesbrief an das Festival." } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Hey, I'm Thore! A podcaster and software developer from the Ruhr area. I've loved Dong Open Air for many years, and this app is basically my little love letter to the festival." } }
+      }
+    },
+    "I'm also a huge Magic: The Gathering fan. If we bump into each other at Dong, let's play a round. And if you enjoy the app, I'd be happy if you grabbed me a beer." : {
+      "localizations" : {
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Außerdem bin ich ein riesiger Magic: The Gathering Fan. Wenn wir uns auf dem Dong über den Weg laufen, lass uns gerne eine Runde spielen. Und wenn dir die App gefällt, freue ich mich riesig über ein Bier." } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "I'm also a huge Magic: The Gathering fan. If we bump into each other at Dong, let's play a round. And if you enjoy the app, I'd be happy if you grabbed me a beer." } }
+      }
+    },
+    "Line-up" : {
+      "comment" : "Title of the full schedule tab",
+      "localizations" : {
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Programm" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Line-up" } }
+      }
+    },
+    "Listen & Follow" : {
+      "localizations" : {
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Anhören & Folgen" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Listen & Follow" } }
+      }
+    },
+    "No favorites" : {
+      "localizations" : {
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Keine Favoriten" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "No favorites" } }
+      }
+    },
+    "No line-up yet" : {
+      "localizations" : {
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Noch kein Programm" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "No line-up yet" } }
+      }
+    },
+    "No upcoming sets for your favorites." : {
+      "localizations" : {
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Keine anstehenden Auftritte deiner Favoriten." } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "No upcoming sets for your favorites." } }
+      }
+    },
+    "Nothing on stage right now." : {
+      "localizations" : {
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Gerade spielt niemand." } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Nothing on stage right now." } }
+      }
+    },
+    "Now" : {
+      "comment" : "Title of the now/up-next tab and the currently-playing section",
+      "localizations" : {
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Jetzt" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Now" } }
+      }
+    },
+    "On stage at %@ · %@" : {
+      "comment" : "Reminder notification body: time, stage",
+      "localizations" : {
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Auf der Bühne um %1$@ · %2$@" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "On stage at %1$@ · %2$@" } }
+      }
+    },
+    "Open Source" : {
+      "localizations" : {
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Open Source" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Open Source" } }
+      }
+    },
+    "Podcaster & software developer from the Ruhr area" : {
+      "localizations" : {
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Podcaster & Softwareentwickler aus dem Ruhrgebiet" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Podcaster & software developer from the Ruhr area" } }
+      }
+    },
+    "Questions or bug reports?" : {
+      "localizations" : {
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Fragen oder Bug-Reports?" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Questions or bug reports?" } }
+      }
+    },
+    "Remove favorite" : {
+      "comment" : "Accessibility label for the favorite star button",
+      "localizations" : {
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Favorit entfernen" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Remove favorite" } }
+      }
+    },
+    "Star a band to see it here." : {
+      "localizations" : {
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Markiere eine Band mit einem Stern, damit sie hier erscheint." } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Star a band to see it here." } }
+      }
+    },
+    "Tap the star on a band to follow it. You'll get a reminder before they play." : {
+      "localizations" : {
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Tippe auf den Stern einer Band, um ihr zu folgen. Du wirst erinnert, bevor sie spielt." } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Tap the star on a band to follow it. You'll get a reminder before they play." } }
+      }
+    },
+    "Up next" : {
+      "comment" : "Section header for the next upcoming sets",
+      "localizations" : {
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Demnächst" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Up next" } }
+      }
+    },
+    "Updated %@" : {
+      "comment" : "Schedule freshness badge, %@ is a relative time like \"2 seconds ago\"",
+      "localizations" : {
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Aktualisiert %@" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Updated %@" } }
+      }
+    },
+    "Your bands" : {
+      "localizations" : {
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Deine Bands" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Your bands" } }
+      }
+    }
+  },
+  "version" : "1.0"
+}

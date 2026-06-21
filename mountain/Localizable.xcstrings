@@ -15,6 +15,41 @@
         "en" : { "stringUnit" : { "state" : "translated", "value" : "Add favorite" } }
       }
     },
+    "Appearance" : {
+      "comment" : "Settings section: light/dark/system appearance",
+      "localizations" : {
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Erscheinungsbild" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Appearance" } }
+      }
+    },
+    "Dark" : {
+      "comment" : "Appearance option",
+      "localizations" : {
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Dunkel" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Dark" } }
+      }
+    },
+    "Light" : {
+      "comment" : "Appearance option",
+      "localizations" : {
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Hell" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Light" } }
+      }
+    },
+    "Settings" : {
+      "comment" : "Title of the settings tab",
+      "localizations" : {
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Einstellungen" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Settings" } }
+      }
+    },
+    "System" : {
+      "comment" : "Appearance option: follow the system",
+      "localizations" : {
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "System" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "System" } }
+      }
+    },
     "Band" : {
       "comment" : "Fallback navigation title on the band detail screen",
       "localizations" : {

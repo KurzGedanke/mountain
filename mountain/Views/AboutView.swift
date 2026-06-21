@@ -13,65 +13,63 @@ struct AboutView: View {
     private static let blueskyTint = Color(red: 0.0, green: 0.53, blue: 1.0)
 
     var body: some View {
-        NavigationStack {
-            ScrollView {
-                VStack(spacing: 28) {
-                    header
-                    bio
+        ScrollView {
+            VStack(spacing: 28) {
+                header
+                bio
 
-                    section("Open Source") {
-                        Text("Both apps and the API that serves the data are open source.")
-                            .font(.callout)
-                            .foregroundStyle(.secondary)
-                            .frame(maxWidth: .infinity, alignment: .leading)
-
-                        LinkRow(
-                            url: URL(string: "https://github.com/KurzGedanke/mountain")!,
-                            symbol: "chevron.left.forwardslash.chevron.right",
-                            tint: .purple,
-                            title: "Mountain",
-                            subtitle: "github.com/KurzGedanke/mountain"
-                        )
-                        LinkRow(
-                            url: URL(string: "https://github.com/KurzGedanke/band-api")!,
-                            symbol: "server.rack",
-                            tint: .teal,
-                            title: "Band API",
-                            subtitle: "github.com/KurzGedanke/band-api"
-                        )
-                    }
-
-                    section("Find me online") {
-                        LinkRow(
-                            url: URL(string: "https://chaos.social/@kurzgedanke")!,
-                            symbol: "bubble.left.and.bubble.right.fill",
-                            tint: Self.mastodonTint,
-                            title: "Mastodon",
-                            subtitle: "@kurzgedanke@chaos.social"
-                        )
-                        LinkRow(
-                            url: URL(string: "https://bsky.app/profile/kurzgedanke.de")!,
-                            symbol: "cloud.fill",
-                            tint: Self.blueskyTint,
-                            title: "Bluesky",
-                            subtitle: "@kurzgedanke.de"
-                        )
-                    }
+                section("Open Source") {
+                    Text("Both apps and the API that serves the data are open source.")
+                        .font(.callout)
+                        .foregroundStyle(.secondary)
+                        .frame(maxWidth: .infinity, alignment: .leading)
 
                     LinkRow(
-                        url: URL(string: "mailto:app@kurzgedanke.me")!,
-                        symbol: "envelope.fill",
-                        tint: .orange,
-                        title: "Questions or bug reports?",
-                        subtitle: "app@kurzgedanke.me"
+                        url: URL(string: "https://github.com/KurzGedanke/mountain")!,
+                        symbol: "chevron.left.forwardslash.chevron.right",
+                        tint: .purple,
+                        title: "Mountain",
+                        subtitle: "github.com/KurzGedanke/mountain"
                     )
-
-                    footer
+                    LinkRow(
+                        url: URL(string: "https://github.com/KurzGedanke/band-api")!,
+                        symbol: "server.rack",
+                        tint: .teal,
+                        title: "Band API",
+                        subtitle: "github.com/KurzGedanke/band-api"
+                    )
                 }
-                .padding()
+
+                section("Find me online") {
+                    LinkRow(
+                        url: URL(string: "https://chaos.social/@kurzgedanke")!,
+                        symbol: "bubble.left.and.bubble.right.fill",
+                        tint: Self.mastodonTint,
+                        title: "Mastodon",
+                        subtitle: "@kurzgedanke@chaos.social"
+                    )
+                    LinkRow(
+                        url: URL(string: "https://bsky.app/profile/kurzgedanke.de")!,
+                        symbol: "cloud.fill",
+                        tint: Self.blueskyTint,
+                        title: "Bluesky",
+                        subtitle: "@kurzgedanke.de"
+                    )
+                }
+
+                LinkRow(
+                    url: URL(string: "mailto:app@kurzgedanke.me")!,
+                    symbol: "envelope.fill",
+                    tint: .orange,
+                    title: "Questions or bug reports?",
+                    subtitle: "app@kurzgedanke.me"
+                )
+
+                footer
             }
-            .navigationTitle("About")
+            .padding()
         }
+        .navigationTitle("About")
     }
 
     // MARK: Header
@@ -169,5 +167,7 @@ private struct LinkRow: View {
 }
 
 #Preview {
-    AboutView()
+    NavigationStack {
+        AboutView()
+    }
 }

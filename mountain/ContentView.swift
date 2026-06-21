@@ -7,19 +7,21 @@
 
 import SwiftUI
 
-enum AppTab: Hashable { case now, lineup, about }
+enum AppTab: Hashable { case now, lineup, settings }
 
 struct ContentView: View {
     @Environment(LineupStore.self) private var lineup
     @Environment(FavoritesStore.self) private var favorites
     @Environment(ReminderManager.self) private var reminders
 
+    @AppStorage("appearance") private var appearance: AppearanceSetting = .system
+
     @State private var selection: AppTab = {
         let args = ProcessInfo.processInfo.arguments
         guard let i = args.firstIndex(of: "-startTab"), i + 1 < args.count else { return .now }
         switch args[i + 1] {
         case "lineup": return .lineup
-        case "about": return .about
+        case "settings", "about": return .settings
         default: return .now
         }
     }()
@@ -32,10 +34,11 @@ struct ContentView: View {
             Tab("Line-up", systemImage: "list.bullet", value: AppTab.lineup) {
                 RunningOrderView()
             }
-            Tab("About", systemImage: "person.crop.circle", value: AppTab.about) {
-                AboutView()
+            Tab("Settings", systemImage: "gearshape", value: AppTab.settings) {
+                SettingsView()
             }
         }
+        .preferredColorScheme(appearance.colorScheme)
         // Re-schedule reminders whenever favorites change; ask permission the
         // first time the user actually favorites something.
         .task(id: favorites.ids) {

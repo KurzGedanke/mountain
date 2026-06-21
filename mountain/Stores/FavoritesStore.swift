@@ -9,6 +9,7 @@
 
 import Foundation
 import Observation
+import TelemetryDeck
 
 @MainActor
 @Observable
@@ -25,11 +26,17 @@ final class FavoritesStore {
     func isFavorite(_ bandId: Int) -> Bool { ids.contains(bandId) }
 
     func toggle(_ bandId: Int) {
-        if ids.contains(bandId) {
-            ids.remove(bandId)
-        } else {
+        let nowFavorite = !ids.contains(bandId)
+        if nowFavorite {
             ids.insert(bandId)
+        } else {
+            ids.remove(bandId)
         }
         UserDefaults.standard.set(Array(ids), forKey: Self.key)
+
+        TelemetryDeck.signal(
+            nowFavorite ? "Band.favorited" : "Band.unfavorited",
+            parameters: ["bandID": String(bandId)]
+        )
     }
 }

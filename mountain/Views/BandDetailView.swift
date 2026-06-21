@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import TelemetryDeck
 
 struct BandDetailView: View {
     @Environment(LineupStore.self) private var lineup
@@ -33,6 +34,9 @@ struct BandDetailView: View {
         }
         .navigationTitle(lineup.band(id: bandId)?.name ?? "Band")
         .navigationBarTitleDisplayMode(.inline)
+        .onAppear {
+            TelemetryDeck.signal("Band.viewed", parameters: ["bandID": String(bandId)])
+        }
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
                 FavoriteButton(bandId: bandId)

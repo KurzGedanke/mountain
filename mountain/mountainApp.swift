@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import TelemetryDeck
 
 @main
 struct mountainApp: App {
@@ -14,6 +15,12 @@ struct mountainApp: App {
     @State private var reminders = ReminderManager()
 
     @AppStorage("remindersEnabled") private var remindersEnabled = true
+
+    init() {
+        let config = TelemetryDeck.Config(appID: "463DFAC5-B137-4E5A-B3DA-2810E0AE27B8")
+        config.defaultSignalPrefix = "de.kurzgedanke."
+        TelemetryDeck.initialize(config: config)
+    }
 
     var body: some Scene {
         WindowGroup {

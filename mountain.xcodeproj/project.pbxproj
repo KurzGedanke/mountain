@@ -6,6 +6,10 @@
 	objectVersion = 70;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		7DEC000000000000000000B1 /* TelemetryDeck in Frameworks */ = {isa = PBXBuildFile; productRef = 7DEC000000000000000000B2 /* TelemetryDeck */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		58CD9EE02B7D0BFD008F834C /* mountain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mountain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58CD9EF12B7D0E80008F834C /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
@@ -21,6 +25,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DEC000000000000000000B1 /* TelemetryDeck in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +69,9 @@
 				4D0000000000000000000001 /* mountain */,
 			);
 			name = mountain;
+			packageProductDependencies = (
+				7DEC000000000000000000B2 /* TelemetryDeck */,
+			);
 			productName = mountain;
 			productReference = 58CD9EE02B7D0BFD008F834C /* mountain.app */;
 			productType = "com.apple.product-type.application";
@@ -93,6 +101,9 @@
 				Base,
 			);
 			mainGroup = 58CD9ED72B7D0BFD008F834C;
+			packageReferences = (
+				7DEC000000000000000000B3 /* XCRemoteSwiftPackageReference "SwiftSDK" */,
+			);
 			productRefGroup = 58CD9EE12B7D0BFD008F834C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -101,6 +112,25 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7DEC000000000000000000B3 /* XCRemoteSwiftPackageReference "SwiftSDK" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/TelemetryDeck/SwiftSDK";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7DEC000000000000000000B2 /* TelemetryDeck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7DEC000000000000000000B3 /* XCRemoteSwiftPackageReference "SwiftSDK" */;
+			productName = TelemetryDeck;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin PBXResourcesBuildPhase section */
 		58CD9EDE2B7D0BFD008F834C /* Resources */ = {

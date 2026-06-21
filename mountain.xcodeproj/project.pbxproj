@@ -113,25 +113,6 @@
 		};
 /* End PBXProject section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		7DEC000000000000000000B3 /* XCRemoteSwiftPackageReference "SwiftSDK" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/TelemetryDeck/SwiftSDK";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		7DEC000000000000000000B2 /* TelemetryDeck */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 7DEC000000000000000000B3 /* XCRemoteSwiftPackageReference "SwiftSDK" */;
-			productName = TelemetryDeck;
-		};
-/* End XCSwiftPackageProductDependency section */
-
 /* Begin PBXResourcesBuildPhase section */
 		58CD9EDE2B7D0BFD008F834C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
@@ -283,7 +264,8 @@
 				DEVELOPMENT_TEAM = SNX8K8E2UK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Mountain - Unoffical Dong Open Air App";
+				INFOPLIST_KEY_CFBundleDisplayName = "Mountain - Unofficial Dong Open Air App";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -316,7 +298,8 @@
 				DEVELOPMENT_TEAM = SNX8K8E2UK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Mountain - Unoffical Dong Open Air App";
+				INFOPLIST_KEY_CFBundleDisplayName = "Mountain - Unofficial Dong Open Air App";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -360,6 +343,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7DEC000000000000000000B3 /* XCRemoteSwiftPackageReference "SwiftSDK" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/TelemetryDeck/SwiftSDK";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7DEC000000000000000000B2 /* TelemetryDeck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7DEC000000000000000000B3 /* XCRemoteSwiftPackageReference "SwiftSDK" */;
+			productName = TelemetryDeck;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 58CD9ED82B7D0BFD008F834C /* Project object */;
 }

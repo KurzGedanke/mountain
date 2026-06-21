@@ -1,238 +1,627 @@
 {
   "sourceLanguage" : "de",
   "strings" : {
+    "%@ · %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ · %2$@"
+          }
+        }
+      }
+    },
     "About" : {
       "comment" : "Title of the about-me tab",
       "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Über mich" } },
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "About" } }
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Über mich"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "About"
+          }
+        }
       }
     },
     "Add favorite" : {
       "comment" : "Accessibility label for the favorite star button",
       "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Favorit hinzufügen" } },
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Add favorite" } }
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Favorit hinzufügen"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add favorite"
+          }
+        }
       }
     },
     "Appearance" : {
       "comment" : "Settings section: light/dark/system appearance",
       "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Erscheinungsbild" } },
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Appearance" } }
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erscheinungsbild"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Appearance"
+          }
+        }
+      }
+    },
+    "Band" : {
+      "comment" : "Fallback navigation title on the band detail screen",
+      "extractionState" : "stale",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Band"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Band"
+          }
+        }
+      }
+    },
+    "Band API" : {
+
+    },
+    "Band not found" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Band nicht gefunden"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Band not found"
+          }
+        }
+      }
+    },
+    "Bluesky" : {
+
+    },
+    "Both apps and the API that serves the data are open source." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beide Apps und die API, die die Daten liefert, sind Open Source."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Both apps and the API that serves the data are open source."
+          }
+        }
+      }
+    },
+    "Connect to the internet once to download the schedule." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verbinde dich einmal mit dem Internet, um das Programm zu laden."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Connect to the internet once to download the schedule."
+          }
+        }
       }
     },
     "Dark" : {
       "comment" : "Appearance option",
       "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Dunkel" } },
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Dark" } }
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dunkel"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dark"
+          }
+        }
       }
     },
-    "Light" : {
-      "comment" : "Appearance option",
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Hell" } },
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Light" } }
-      }
-    },
-    "Settings" : {
-      "comment" : "Title of the settings tab",
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Einstellungen" } },
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Settings" } }
-      }
-    },
-    "System" : {
-      "comment" : "Appearance option: follow the system",
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "System" } },
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "System" } }
-      }
-    },
-    "Band" : {
-      "comment" : "Fallback navigation title on the band detail screen",
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Band" } },
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Band" } }
-      }
-    },
-    "Band not found" : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Band nicht gefunden" } },
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Band not found" } }
-      }
-    },
-    "Both apps and the API that serves the data are open source." : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Beide Apps und die API, die die Daten liefert, sind Open Source." } },
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Both apps and the API that serves the data are open source." } }
-      }
-    },
-    "Connect to the internet once to download the schedule." : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Verbinde dich einmal mit dem Internet, um das Programm zu laden." } },
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Connect to the internet once to download the schedule." } }
-      }
+    "Dong Open Air" : {
+
     },
     "Favorites only" : {
       "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Nur Favoriten" } },
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Favorites only" } }
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nur Favoriten"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Favorites only"
+          }
+        }
+      }
+    },
+    "Find me online" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Online findest du mich"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Find me online"
+          }
+        }
       }
     },
     "Get a reminder 15 minutes before a favorited band plays." : {
       "comment" : "Settings footer explaining the reminders toggle",
       "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Erhalte 15 Minuten vorher eine Erinnerung, bevor eine favorisierte Band spielt." } },
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Get a reminder 15 minutes before a favorited band plays." } }
-      }
-    },
-    "Notifications" : {
-      "comment" : "Settings section header for the reminders toggle",
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Benachrichtigungen" } },
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Notifications" } }
-      }
-    },
-    "Search bands" : {
-      "comment" : "Search field placeholder on the line-up page",
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Bands suchen" } },
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Search bands" } }
-      }
-    },
-    "Reminders" : {
-      "comment" : "Toggle label: enable/disable reminder notifications",
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Erinnerungen" } },
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Reminders" } }
-      }
-    },
-    "Find me online" : {
-      "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Online findest du mich" } },
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Find me online" } }
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erhalte 15 Minuten vorher eine Erinnerung, bevor eine favorisierte Band spielt."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Get a reminder 15 minutes before a favorited band plays."
+          }
+        }
       }
     },
     "Hey, I'm Thore! A podcaster and software developer from the Ruhr area. I've loved Dong Open Air for many years, and this app is basically my little love letter to the festival." : {
       "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Moin, ich bin Thore! Podcaster und Softwareentwickler aus dem Ruhrgebiet. Das Dong Open Air liebe ich schon seit vielen Jahren, und diese App ist quasi mein kleiner Liebesbrief an das Festival." } },
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Hey, I'm Thore! A podcaster and software developer from the Ruhr area. I've loved Dong Open Air for many years, and this app is basically my little love letter to the festival." } }
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Moin, ich bin Thore! Podcaster und Softwareentwickler aus dem Ruhrgebiet. Das Dong Open Air liebe ich schon seit vielen Jahren, und diese App ist quasi mein kleiner Liebesbrief an das Festival."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hey, I'm Thore! A podcaster and software developer from the Ruhr area. I've loved Dong Open Air for many years, and this app is basically my little love letter to the festival."
+          }
+        }
       }
     },
     "I'm also a huge Magic: The Gathering fan. If we bump into each other at Dong, let's play a round. And if you enjoy the app, I'd be happy if you grabbed me a beer." : {
       "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Außerdem bin ich ein riesiger Magic: The Gathering Fan. Wenn wir uns auf dem Dong über den Weg laufen, lass uns gerne eine Runde spielen. Und wenn dir die App gefällt, freue ich mich riesig über ein Bier." } },
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "I'm also a huge Magic: The Gathering fan. If we bump into each other at Dong, let's play a round. And if you enjoy the app, I'd be happy if you grabbed me a beer." } }
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Außerdem bin ich ein riesiger Magic: The Gathering Fan. Wenn wir uns auf dem Dong über den Weg laufen, lass uns gerne eine Runde spielen. Und wenn dir die App gefällt, freue ich mich riesig über ein Bier."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I'm also a huge Magic: The Gathering fan. If we bump into each other at Dong, let's play a round. And if you enjoy the app, I'd be happy if you grabbed me a beer."
+          }
+        }
+      }
+    },
+    "Light" : {
+      "comment" : "Appearance option",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hell"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Light"
+          }
+        }
       }
     },
     "Line-up" : {
       "comment" : "Title of the full schedule tab",
       "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Programm" } },
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Line-up" } }
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Programm"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Line-up"
+          }
+        }
       }
     },
     "Listen & Follow" : {
       "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Anhören & Folgen" } },
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Listen & Follow" } }
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anhören & Folgen"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Listen & Follow"
+          }
+        }
       }
+    },
+    "Mastodon" : {
+
+    },
+    "Mountain" : {
+
     },
     "No favorites" : {
       "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Keine Favoriten" } },
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "No favorites" } }
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Keine Favoriten"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No favorites"
+          }
+        }
       }
     },
     "No line-up yet" : {
       "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Noch kein Programm" } },
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "No line-up yet" } }
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Noch kein Programm"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No line-up yet"
+          }
+        }
       }
     },
     "No upcoming sets for your favorites." : {
       "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Keine anstehenden Auftritte deiner Favoriten." } },
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "No upcoming sets for your favorites." } }
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Keine anstehenden Auftritte deiner Favoriten."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No upcoming sets for your favorites."
+          }
+        }
       }
     },
     "Nothing on stage right now." : {
       "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Gerade spielt niemand." } },
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Nothing on stage right now." } }
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gerade spielt niemand."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nothing on stage right now."
+          }
+        }
+      }
+    },
+    "Notifications" : {
+      "comment" : "Settings section header for the reminders toggle",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Benachrichtigungen"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notifications"
+          }
+        }
       }
     },
     "Now" : {
       "comment" : "Title of the now/up-next tab and the currently-playing section",
       "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Jetzt" } },
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Now" } }
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jetzt"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Now"
+          }
+        }
       }
     },
     "On stage at %@ · %@" : {
       "comment" : "Reminder notification body: time, stage",
       "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Auf der Bühne um %1$@ · %2$@" } },
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "On stage at %1$@ · %2$@" } }
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Auf der Bühne um %1$@ · %2$@"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "On stage at %1$@ · %2$@"
+          }
+        }
       }
     },
     "Open Source" : {
       "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Open Source" } },
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Open Source" } }
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Open Source"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Open Source"
+          }
+        }
       }
     },
     "Podcaster & software developer from the Ruhr area" : {
       "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Podcaster & Softwareentwickler aus dem Ruhrgebiet" } },
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Podcaster & software developer from the Ruhr area" } }
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Podcaster & Softwareentwickler aus dem Ruhrgebiet"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Podcaster & software developer from the Ruhr area"
+          }
+        }
       }
     },
     "Questions or bug reports?" : {
       "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Fragen oder Bug-Reports?" } },
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Questions or bug reports?" } }
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fragen oder Bug-Reports?"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Questions or bug reports?"
+          }
+        }
+      }
+    },
+    "Reminders" : {
+      "comment" : "Toggle label: enable/disable reminder notifications",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erinnerungen"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reminders"
+          }
+        }
       }
     },
     "Remove favorite" : {
       "comment" : "Accessibility label for the favorite star button",
       "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Favorit entfernen" } },
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Remove favorite" } }
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Favorit entfernen"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Remove favorite"
+          }
+        }
+      }
+    },
+    "Search bands" : {
+      "comment" : "Search field placeholder on the line-up page",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bands suchen"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Search bands"
+          }
+        }
+      }
+    },
+    "Settings" : {
+      "comment" : "Title of the settings tab",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Einstellungen"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Settings"
+          }
+        }
       }
     },
     "Star a band to see it here." : {
       "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Markiere eine Band mit einem Stern, damit sie hier erscheint." } },
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Star a band to see it here." } }
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Markiere eine Band mit einem Stern, damit sie hier erscheint."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Star a band to see it here."
+          }
+        }
+      }
+    },
+    "System" : {
+      "comment" : "Appearance option: follow the system",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "System"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "System"
+          }
+        }
       }
     },
     "Tap the star on a band to follow it. You'll get a reminder before they play." : {
       "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Tippe auf den Stern einer Band, um ihr zu folgen. Du wirst erinnert, bevor sie spielt." } },
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Tap the star on a band to follow it. You'll get a reminder before they play." } }
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tippe auf den Stern einer Band, um ihr zu folgen. Du wirst erinnert, bevor sie spielt."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tap the star on a band to follow it. You'll get a reminder before they play."
+          }
+        }
       }
+    },
+    "Thore" : {
+
     },
     "Up next" : {
       "comment" : "Section header for the next upcoming sets",
       "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Demnächst" } },
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Up next" } }
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Demnächst"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Up next"
+          }
+        }
       }
     },
     "Updated %@" : {
       "comment" : "Schedule freshness badge, %@ is a relative time like \"2 seconds ago\"",
       "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Aktualisiert %@" } },
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Updated %@" } }
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aktualisiert %@"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Updated %@"
+          }
+        }
       }
     },
     "Your bands" : {
       "localizations" : {
-        "de" : { "stringUnit" : { "state" : "translated", "value" : "Deine Bands" } },
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Your bands" } }
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deine Bands"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your bands"
+          }
+        }
       }
     }
   },

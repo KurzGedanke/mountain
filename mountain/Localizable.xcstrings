@@ -95,6 +95,13 @@
         "en" : { "stringUnit" : { "state" : "translated", "value" : "Notifications" } }
       }
     },
+    "Search bands" : {
+      "comment" : "Search field placeholder on the line-up page",
+      "localizations" : {
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Bands suchen" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Search bands" } }
+      }
+    },
     "Reminders" : {
       "comment" : "Toggle label: enable/disable reminder notifications",
       "localizations" : {

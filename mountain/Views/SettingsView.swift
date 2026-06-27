@@ -37,38 +37,30 @@ struct SettingsView: View {
     @AppStorage("remindersEnabled") private var remindersEnabled = true
 
     var body: some View {
-        NavigationStack {
-            Form {
-                Section("Appearance") {
-                    Picker("Appearance", selection: $appearance) {
-                        ForEach(AppearanceSetting.allCases) { option in
-                            Text(option.label).tag(option)
-                        }
-                    }
-                    .pickerStyle(.segmented)
-                }
-
-                Section {
-                    Toggle("Reminders", isOn: $remindersEnabled)
-                } header: {
-                    Text("Notifications")
-                } footer: {
-                    Text("Get a reminder 15 minutes before a favorited band plays.")
-                }
-
-                Section {
-                    NavigationLink {
-                        AboutView()
-                    } label: {
-                        Label("About", systemImage: "person.crop.circle")
+        Form {
+            Section("Appearance") {
+                Picker("Appearance", selection: $appearance) {
+                    ForEach(AppearanceSetting.allCases) { option in
+                        Text(option.label).tag(option)
                     }
                 }
+                .pickerStyle(.segmented)
             }
-            .navigationTitle("Settings")
+
+            Section {
+                Toggle("Reminders", isOn: $remindersEnabled)
+            } header: {
+                Text("Notifications")
+            } footer: {
+                Text("Get a reminder 15 minutes before a favorited band plays.")
+            }
         }
+        .navigationTitle("Settings")
     }
 }
 
 #Preview {
-    SettingsView()
+    NavigationStack {
+        SettingsView()
+    }
 }

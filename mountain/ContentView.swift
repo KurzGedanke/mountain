@@ -42,8 +42,8 @@ struct ContentView: View {
             Tab("Line-up", systemImage: "list.bullet", value: AppTab.lineup) {
                 RunningOrderView()
             }
-            Tab("Settings", systemImage: "gearshape", value: AppTab.settings) {
-                SettingsView()
+            Tab("Information", systemImage: "info.circle", value: AppTab.settings) {
+                InfoView()
             }
         }
         .preferredColorScheme(appearance.colorScheme)

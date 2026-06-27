@@ -1,6 +1,125 @@
 {
   "sourceLanguage" : "de",
   "strings" : {
+    "This app is an unofficial fan project and is in no way affiliated with DONG OPEN AIR or Dong Kultur e.V. It was not commissioned, authorized, reviewed, or otherwise endorsed by the association.\n\nIt is a purely private project, created out of enthusiasm for the festival. The app pursues no commercial purpose and has no intention of making a profit.\n\nAll names, brands, and logos mentioned are the property of their respective owners. They are used here for informational purposes only. For official information about the festival, please visit the official channels of DONG OPEN AIR or Dong Kultur e.V.\n\nAll information in this app is provided without guarantee." : {
+      "comment" : "Info screen: legal disclaimer body",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Diese App ist ein inoffizielles Fan-Projekt und steht in keinerlei Verbindung zum DONG OPEN AIR oder zum Dong Kultur e.V. Sie wurde nicht vom Verein in Auftrag gegeben, autorisiert, geprüft oder anderweitig unterstützt.\n\nEs handelt sich um ein rein privates Projekt, das aus Begeisterung für das Festival entstanden ist. Mit der App werden keine kommerziellen Zwecke verfolgt und es besteht keinerlei Gewinnabsicht.\n\nAlle genannten Namen, Marken und Logos sind Eigentum ihrer jeweiligen Rechteinhaber. Sie werden hier ausschließlich zu informativen Zwecken verwendet. Für offizielle Informationen rund um das Festival besuche bitte die offiziellen Kanäle des DONG OPEN AIR bzw. des Dong Kultur e.V.\n\nAlle Angaben in dieser App erfolgen ohne Gewähr."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "This app is an unofficial fan project and is in no way affiliated with DONG OPEN AIR or Dong Kultur e.V. It was not commissioned, authorized, reviewed, or otherwise endorsed by the association.\n\nIt is a purely private project, created out of enthusiasm for the festival. The app pursues no commercial purpose and has no intention of making a profit.\n\nAll names, brands, and logos mentioned are the property of their respective owners. They are used here for informational purposes only. For official information about the festival, please visit the official channels of DONG OPEN AIR or Dong Kultur e.V.\n\nAll information in this app is provided without guarantee."
+          }
+        }
+      }
+    },
+    "Directions" : {
+      "comment" : "Info screen: link to the festival travel/directions page",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anfahrt"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Directions"
+          }
+        }
+      }
+    },
+    "Disclaimer" : {
+      "comment" : "Info screen: legal disclaimer section header",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hinweis"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Disclaimer"
+          }
+        }
+      }
+    },
+    "FAQ" : {
+      "comment" : "Info screen: link to the festival FAQ/infos page",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "FAQ"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "FAQ"
+          }
+        }
+      }
+    },
+    "Information" : {
+      "comment" : "Title of the information tab",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Information"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Information"
+          }
+        }
+      }
+    },
+    "News" : {
+      "comment" : "Info screen: link to the festival news page",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "News"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "News"
+          }
+        }
+      }
+    },
+    "Official channels" : {
+      "comment" : "Info screen: section header for official festival links",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Offizielle Kanäle"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Official channels"
+          }
+        }
+      }
+    },
     "%@ · %@" : {
       "localizations" : {
         "de" : {

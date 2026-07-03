@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import TelemetryDeck
 
 struct BandDetailView: View {
     @Environment(LineupStore.self) private var lineup
@@ -20,9 +19,11 @@ struct BandDetailView: View {
                 VStack(alignment: .leading, spacing: 20) {
                     header(band)
                     sets
+                    autographs
                     if let description = band.description, !description.isEmpty {
-                        Text(description)
+                        HTMLText(html: description)
                             .font(.body)
+                            .frame(maxWidth: .infinity, alignment: .leading)
                     }
                     links(band)
                 }
@@ -35,7 +36,7 @@ struct BandDetailView: View {
         .navigationTitle(lineup.band(id: bandId)?.name ?? "Band")
         .navigationBarTitleDisplayMode(.inline)
         .onAppear {
-            TelemetryDeck.signal("Band.viewed", parameters: ["bandID": String(bandId)])
+            Analytics.bandViewed(bandId)
         }
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
@@ -97,6 +98,38 @@ struct BandDetailView: View {
                         Image(systemName: "clock")
                     }
                     .font(.headline)
+                }
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .padding()
+            .background(.quaternary.opacity(0.5), in: RoundedRectangle(cornerRadius: 12, style: .continuous))
+        }
+    }
+
+    @ViewBuilder
+    private var autographs: some View {
+        let sessions = lineup.autographs(forBand: bandId)
+        if !sessions.isEmpty {
+            VStack(alignment: .leading, spacing: 12) {
+                Text("Autographs").font(.headline)
+                ForEach(sessions) { session in
+                    HStack(alignment: .top, spacing: 12) {
+                        Image(systemName: "signature")
+                            .foregroundStyle(.secondary)
+                            .frame(width: 20)
+                        VStack(alignment: .leading, spacing: 2) {
+                            Text("\(Fmt.dayTime(session.start)) · \(session.signingPoint)")
+                                .font(.subheadline.weight(.semibold))
+                            if let location = session.location, !location.isEmpty {
+                                Text(location)
+                                    .font(.caption)
+                                    .foregroundStyle(.secondary)
+                            }
+                        }
+                        Spacer()
+                        AutographFavoriteButton(sessionID: session.id)
+                            .font(.title3)
+                    }
                 }
             }
             .frame(maxWidth: .infinity, alignment: .leading)

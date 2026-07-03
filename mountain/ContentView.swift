@@ -14,6 +14,7 @@ enum AppTab: Hashable { case now, lineup, settings }
 private struct ReminderSyncKey: Hashable {
     let enabled: Bool
     let favorites: Set<Int>
+    let autographFavorites: Set<String>
 }
 
 struct ContentView: View {
@@ -36,24 +37,29 @@ struct ContentView: View {
 
     var body: some View {
         TabView(selection: $selection) {
-            Tab("Now", systemImage: "play.circle.fill", value: AppTab.now) {
-                HomeView()
-            }
-            Tab("Line-up", systemImage: "list.bullet", value: AppTab.lineup) {
-                RunningOrderView()
-            }
-            Tab("Information", systemImage: "info.circle", value: AppTab.settings) {
-                InfoView()
-            }
+            HomeView()
+                .tabItem { Label("Now", systemImage: "play.circle.fill") }
+                .tag(AppTab.now)
+            RunningOrderView()
+                .tabItem { Label("Line-up", systemImage: "list.bullet") }
+                .tag(AppTab.lineup)
+            InfoView()
+                .tabItem { Label("Information", systemImage: "info.circle") }
+                .tag(AppTab.settings)
         }
         .preferredColorScheme(appearance.colorScheme)
         // Re-schedule reminders whenever favorites or the notifications toggle
         // change; ask permission the first time the user enables a reminder.
-        .task(id: ReminderSyncKey(enabled: remindersEnabled, favorites: favorites.ids)) {
-            if remindersEnabled && !favorites.ids.isEmpty && !reminders.authorized {
+        .task(id: ReminderSyncKey(enabled: remindersEnabled,
+                                  favorites: favorites.ids,
+                                  autographFavorites: favorites.autographIDs)) {
+            let hasFavorites = !favorites.ids.isEmpty || !favorites.autographIDs.isEmpty
+            if remindersEnabled && hasFavorites && !reminders.authorized {
                 await reminders.requestAuthorization()
             }
-            await reminders.sync(enabled: remindersEnabled, favorites: favorites.ids, slots: lineup.slots)
+            await reminders.sync(enabled: remindersEnabled,
+                                 favorites: favorites.ids, slots: lineup.slots,
+                                 autographFavorites: favorites.autographIDs, autographs: lineup.autographs)
         }
     }
 }

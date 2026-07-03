@@ -28,7 +28,13 @@ final class ReminderManager {
     /// Rebuilds all pending reminders from scratch. When `enabled` is false (the
     /// user turned reminders off in Settings) all pending reminders are cleared
     /// and nothing is scheduled.
-    func sync(enabled: Bool, favorites: Set<Int>, slots: [TimeSlot]) async {
+    func sync(
+        enabled: Bool,
+        favorites: Set<Int>,
+        slots: [TimeSlot],
+        autographFavorites: Set<String>,
+        autographs: [AutographSession]
+    ) async {
         let center = UNUserNotificationCenter.current()
         center.removeAllPendingNotificationRequests()
         guard enabled else { return }
@@ -56,6 +62,25 @@ final class ReminderManager {
             )
             let trigger = UNCalendarNotificationTrigger(dateMatching: components, repeats: false)
             let request = UNNotificationRequest(identifier: slot.id, content: content, trigger: trigger)
+            try? await center.add(request)
+        }
+
+        for session in autographs where autographFavorites.contains(session.id) {
+            let fireDate = session.start.addingTimeInterval(-lead)
+            guard fireDate > now else { continue }
+
+            let content = UNMutableNotificationContent()
+            content.title = session.band
+            content.body = String(localized: "Signing at \(session.start.formatted(.dateTime.hour().minute())) · \(session.signingPoint)")
+            content.sound = .default
+
+            let components = Calendar.current.dateComponents(
+                [.year, .month, .day, .hour, .minute],
+                from: fireDate
+            )
+            let trigger = UNCalendarNotificationTrigger(dateMatching: components, repeats: false)
+            // Prefixed so it can't collide with a set reminder sharing the band+time id.
+            let request = UNNotificationRequest(identifier: "autograph-\(session.id)", content: content, trigger: trigger)
             try? await center.add(request)
         }
     }

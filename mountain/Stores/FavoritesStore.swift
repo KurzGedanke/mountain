@@ -9,18 +9,23 @@
 
 import Foundation
 import Observation
-import TelemetryDeck
 
 @MainActor
 @Observable
 final class FavoritesStore {
     private static let key = "favoriteBandIDs"
+    private static let autographKey = "favoriteAutographIDs"
 
     private(set) var ids: Set<Int>
+    /// Favorited autograph sessions, keyed by `AutographSession.id`. Kept separate
+    /// from band favorites: a band can have several sessions, favorited apart.
+    private(set) var autographIDs: Set<String>
 
     init() {
         let stored = UserDefaults.standard.array(forKey: Self.key) as? [Int] ?? []
         ids = Set(stored)
+        let storedAutographs = UserDefaults.standard.array(forKey: Self.autographKey) as? [String] ?? []
+        autographIDs = Set(storedAutographs)
     }
 
     func isFavorite(_ bandId: Int) -> Bool { ids.contains(bandId) }
@@ -34,9 +39,20 @@ final class FavoritesStore {
         }
         UserDefaults.standard.set(Array(ids), forKey: Self.key)
 
-        TelemetryDeck.signal(
-            nowFavorite ? "Band.favorited" : "Band.unfavorited",
-            parameters: ["bandID": String(bandId)]
-        )
+        if nowFavorite { Analytics.bandFavorited(bandId) }
+    }
+
+    func isFavoriteAutograph(_ id: String) -> Bool { autographIDs.contains(id) }
+
+    func toggleAutograph(_ id: String) {
+        let nowFavorite = !autographIDs.contains(id)
+        if nowFavorite {
+            autographIDs.insert(id)
+        } else {
+            autographIDs.remove(id)
+        }
+        UserDefaults.standard.set(Array(autographIDs), forKey: Self.autographKey)
+
+        if nowFavorite { Analytics.autographFavorited(id) }
     }
 }

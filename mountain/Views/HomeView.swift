@@ -28,6 +28,7 @@ struct HomeView: View {
         let playing = lineup.nowPlaying(at: now)
         let next = lineup.upNext(at: now)
         let favoriteSlots = upcomingFavoriteSlots(now: now)
+        let nextAutograph = upcomingFavoriteAutographs(now: now).first
 
         List {
             if lineup.isEmpty {
@@ -39,6 +40,7 @@ struct HomeView: View {
             } else {
                 nowSection(playing)
                 nextSection(next)
+                autographSection(nextAutograph)
                 favoritesSection(favoriteSlots, now: now)
             }
         }
@@ -73,6 +75,15 @@ struct HomeView: View {
     }
 
     @ViewBuilder
+    private func autographSection(_ session: AutographSession?) -> some View {
+        if let session {
+            Section("Your next autograph session") {
+                AutographRow(session: session)
+            }
+        }
+    }
+
+    @ViewBuilder
     private func favoritesSection(_ slots: [TimeSlot], now: Date) -> some View {
         Section("Your bands") {
             if favorites.ids.isEmpty {
@@ -96,11 +107,49 @@ struct HomeView: View {
             .filter { ($0.end ?? $0.start.addingTimeInterval(3600)) >= now }
             .sorted { $0.start < $1.start }
     }
+
+    private func upcomingFavoriteAutographs(now: Date) -> [AutographSession] {
+        lineup.autographs
+            .filter { favorites.isFavoriteAutograph($0.id) }
+            .filter { ($0.end ?? $0.start.addingTimeInterval(3600)) >= now }
+            .sorted { $0.start < $1.start }
+    }
+}
+
+/// One favorited autograph session: thumbnail, band, time/point, star, link.
+private struct AutographRow: View {
+    @Environment(LineupStore.self) private var lineup
+    let session: AutographSession
+
+    var body: some View {
+        NavigationLink {
+            BandDetailView(bandId: session.bandId)
+        } label: {
+            HStack(spacing: 12) {
+                if let band = lineup.band(id: session.bandId) {
+                    BandThumbnail(band: band)
+                }
+                VStack(alignment: .leading, spacing: 2) {
+                    Text(session.band)
+                    Text("\(Fmt.dayTime(session.start)) · \(session.signingPoint)")
+                        .font(.subheadline)
+                        .foregroundStyle(.secondary)
+                }
+                Spacer()
+                Image(systemName: "star.fill")
+                    .foregroundStyle(.yellow)
+                    .accessibilityLabel(Text("Favorited"))
+            }
+        }
+    }
 }
 
 /// One schedule entry: thumbnail, band, time/stage, star, and a link to detail.
+/// The star here is a non-interactive indicator — favoriting happens on the band
+/// detail screen so a stray tap on the Now board can't drop a favorite.
 private struct SlotRow: View {
     @Environment(LineupStore.self) private var lineup
+    @Environment(FavoritesStore.self) private var favorites
     let slot: TimeSlot
     var emphasized: Bool = false
     var showDay: Bool = false
@@ -121,7 +170,11 @@ private struct SlotRow: View {
                         .foregroundStyle(.secondary)
                 }
                 Spacer()
-                FavoriteButton(bandId: slot.bandId)
+                if favorites.isFavorite(slot.bandId) {
+                    Image(systemName: "star.fill")
+                        .foregroundStyle(.yellow)
+                        .accessibilityLabel(Text("Favorited"))
+                }
             }
         }
     }

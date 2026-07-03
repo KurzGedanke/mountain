@@ -30,7 +30,9 @@ struct mountainApp: App {
                 .environment(reminders)
                 .task {
                     await lineup.refresh()
-                    await reminders.sync(enabled: remindersEnabled, favorites: favorites.ids, slots: lineup.slots)
+                    await reminders.sync(enabled: remindersEnabled,
+                                         favorites: favorites.ids, slots: lineup.slots,
+                                         autographFavorites: favorites.autographIDs, autographs: lineup.autographs)
                 }
         }
     }

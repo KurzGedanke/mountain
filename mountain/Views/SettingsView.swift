@@ -52,7 +52,7 @@ struct SettingsView: View {
             } header: {
                 Text("Notifications")
             } footer: {
-                Text("Get a reminder 15 minutes before a favorited band plays.")
+                Text("Get a reminder 15 minutes before a favorited band plays or an autograph session starts.")
             }
         }
         .navigationTitle("Settings")

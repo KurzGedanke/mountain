@@ -39,9 +39,20 @@ struct BaphometAPI: Sendable {
         let endTime: PHPDate?
     }
 
-    /// Fetches bands + every stage's schedule and assembles a fresh snapshot.
+    private struct APIAutograph: Decodable {
+        let band: String
+        let bandSlug: String
+        let bandId: Int
+        let signingPoint: String
+        let location: String?
+        let startTime: PHPDate
+        let endTime: PHPDate?
+    }
+
+    /// Fetches bands + every stage's schedule + autographs and assembles a fresh snapshot.
     func fetchSnapshot() async throws -> LineupSnapshot {
         async let bandsTask = fetchBands()
+        async let autographsTask = fetchAutographs()
         let stages = try await fetchStages()
 
         var slots: [TimeSlot] = []
@@ -50,12 +61,15 @@ struct BaphometAPI: Sendable {
         }
 
         let bands = try await bandsTask
+        var autographs = try await autographsTask
         slots.sort { $0.start < $1.start }
+        autographs.sort { $0.start < $1.start }
         return LineupSnapshot(
             festival: Self.festival,
             stages: stages.map(\.name),
             bands: bands,
             slots: slots,
+            autographs: autographs,
             updatedAt: Date()
         )
     }
@@ -90,6 +104,25 @@ struct BaphometAPI: Sendable {
                 band: $0.band,
                 bandSlug: $0.bandSlug,
                 stage: $0.stage,
+                start: $0.startTime.date,
+                end: $0.endTime?.date
+            )
+        }
+    }
+
+    private func fetchAutographs() async throws -> [AutographSession] {
+        let url = base
+            .appending(path: "api/festivals")
+            .appending(path: Self.festivalSlug)
+            .appending(path: "autographs")
+        let api = try await get(url, as: [APIAutograph].self)
+        return api.map {
+            AutographSession(
+                bandId: $0.bandId,
+                band: $0.band,
+                bandSlug: $0.bandSlug,
+                signingPoint: $0.signingPoint,
+                location: $0.location,
                 start: $0.startTime.date,
                 end: $0.endTime?.date
             )

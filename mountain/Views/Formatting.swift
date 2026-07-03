@@ -71,3 +71,21 @@ struct FavoriteButton: View {
         .accessibilityLabel(favorites.isFavorite(bandId) ? Text("Remove favorite") : Text("Add favorite"))
     }
 }
+
+/// A tappable star that favorites a single autograph session, scheduling a
+/// reminder 15 minutes before it starts.
+struct AutographFavoriteButton: View {
+    @Environment(FavoritesStore.self) private var favorites
+    let sessionID: String
+
+    var body: some View {
+        Button {
+            favorites.toggleAutograph(sessionID)
+        } label: {
+            Image(systemName: favorites.isFavoriteAutograph(sessionID) ? "star.fill" : "star")
+                .foregroundStyle(favorites.isFavoriteAutograph(sessionID) ? .yellow : .secondary)
+        }
+        .buttonStyle(.plain)
+        .accessibilityLabel(favorites.isFavoriteAutograph(sessionID) ? Text("Remove reminder") : Text("Remind me"))
+    }
+}

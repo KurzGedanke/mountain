@@ -35,6 +35,19 @@ struct InfoView: View {
                 }
 
                 Section {
+                    Link(destination: URL(string: "https://github.com/KurzGedanke/mountain-android")!) {
+                        Label("Source on GitHub", systemImage: "chevron.left.forwardslash.chevron.right")
+                    }
+                    Link(destination: URL(string: "https://github.com/KurzGedanke/mountain-android/releases")!) {
+                        Label("Download (Releases)", systemImage: "arrow.down.circle")
+                    }
+                } header: {
+                    Text("Android app")
+                } footer: {
+                    Text("Get the Android version from GitHub.")
+                }
+
+                Section {
                     NavigationLink {
                         SettingsView()
                     } label: {

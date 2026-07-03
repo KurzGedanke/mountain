@@ -28,11 +28,15 @@ final class LineupStore {
 
     var bands: [Band] { snapshot.bands.sorted { $0.name.localizedCaseInsensitiveCompare($1.name) == .orderedAscending } }
     var slots: [TimeSlot] { snapshot.slots }
+    var autographs: [AutographSession] { snapshot.autographs }
     var updatedAt: Date? { snapshot.updatedAt }
     var isEmpty: Bool { snapshot.slots.isEmpty && snapshot.bands.isEmpty }
 
     func band(id: Int) -> Band? { snapshot.bands.first { $0.id == id } }
     func slots(forBand id: Int) -> [TimeSlot] { snapshot.slots.filter { $0.bandId == id } }
+    func autographs(forBand id: Int) -> [AutographSession] {
+        snapshot.autographs.filter { $0.bandId == id }.sorted { $0.start < $1.start }
+    }
 
     /// Bands currently on stage at `date`. Falls back to a 1h window when a
     /// slot has no explicit end time.
